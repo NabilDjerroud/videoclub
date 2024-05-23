@@ -1,0 +1,5 @@
+npx create-react-app nom-du-dossier
+
+npm start
+
+npm install react-router-dom

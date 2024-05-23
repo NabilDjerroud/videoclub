@@ -1,0 +1,30 @@
+/* Styles pour le conteneur */
+div {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px; /* Espace entre les tuiles */
+    justify-content: center; /* Centrer les tuiles horizontalement */
+  }
+  
+  /* Styles pour chaque tuile */
+  article {
+    background: #f0f0f0;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 16px;
+    width: 200px; /* Largeur fixe pour chaque tuile */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    text-align: center; /* Centrer le texte et les images */
+  }
+  
+  /* Styles pour l'image */
+article img {
+    width: 100%; /* L'image prend toute la largeur de la tuile */
+    height: auto; /* Maintenir le ratio d'aspect de l'image */
+    border-radius: 8px 8px 0 0; /* Coins arrondis en haut */
+  }
+  
+  /* Styles pour le contenu de la tuile */
+  article h2, article p {
+    margin: 8px 0; /* Espacement entre les éléments */
+  }

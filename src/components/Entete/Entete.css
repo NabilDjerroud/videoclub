@@ -1,0 +1,77 @@
+/* Style global */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+  }
+  
+  /* Style de l'en-tête */
+  header {
+    background-color: #333;
+    color: white;
+    padding: 20px 0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .wrapper {
+    width: 90%;
+    margin: 0 auto;
+    max-width: 1200px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .entete {
+    display: flex;
+    align-items: center;
+  }
+  
+  .entete h1 {
+    margin: 0;
+    font-size: 24px;
+    color: #ff6347;
+  }
+  
+  .entete nav {
+    margin-left: 20px;
+  }
+  
+  .entete nav a {
+    color: white;
+    text-decoration: none;
+    margin-left: 15px;
+    font-size: 18px;
+  }
+  
+  .entete nav a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Style du formulaire de connexion */
+  form {
+    display: flex;
+    align-items: center;
+  }
+  
+  form input[type="text"] {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    margin-right: 10px;
+  }
+  
+  form button {
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    background-color: #ff6347;
+    color: white;
+    cursor: pointer;
+    font-size: 16px;
+  }
+  
+  form button:hover {
+    background-color: #e55347;
+  }
+  
