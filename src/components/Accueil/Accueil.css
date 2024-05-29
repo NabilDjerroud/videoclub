@@ -1,0 +1,27 @@
+.accueil-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .accueil-title {
+    font-size: 2em;
+    margin-bottom: 20px;
+    color: #333;
+  }
+  
+  .accueil-paragraph {
+    font-size: 1.1em;
+    line-height: 1.6;
+    color: #666;
+  }
+  
+  .accueil-paragraph:first-of-type {
+    margin-top: 0;
+  }
+  
+  .accueil-paragraph:last-of-type {
+    margin-bottom: 0;
+  }
+  

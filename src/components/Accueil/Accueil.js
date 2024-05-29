@@ -3,13 +3,13 @@ import accueilData from './Accueil.json'; // Importer les données depuis le fic
 
 function Accueil() {
   return (
-    <main>
-      <h2>Accueil VideoClub</h2>
+    <main className="accueil-container">
+      <h2 className="accueil-title">Accueil VideoClub</h2>
 
       {/* j'utilise la méthode map pour parcourir les données */}
         {accueilData.map((paragraphe, index) => ( 
      
-            <p key={index}>{paragraphe}</p>
+            <p key={index} className="accueil-paragraph">{paragraphe}</p>
 
         ))}
 

@@ -20,11 +20,11 @@ function Vote() {
       </div>
       <div>
         {/* afficher la moyenne ou le message aucun vote */}
-        Moyenne: {moyenne !== null ? moyenne : 'Aucun vote enregistré'}
+        <strong>Moyenne:</strong> {moyenne !== null ? moyenne : 'Aucun vote enregistré'}
       </div>
       <div>
         {/* gestion du s du vote / votes */}
-        Nombre de vote{votes.length !== 1 && 's'}: {votes.length}
+        <strong>Nombre de vote</strong>{votes.length > 1 && <strong>s</strong>}: {votes.length}
       </div>
     </div>
   );

@@ -17,7 +17,7 @@ function ListeFilms() {
       .then(reponse => reponse.json())
       .then(data => {
         setListeFilms(data);
-        setFilmsFiltres(data); // Initialize with all films
+        setFilmsFiltres(data); 
         setEstCharge(true);
       });
   }, []);

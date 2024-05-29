@@ -1,20 +1,21 @@
+article img {
+  width: 100%;
+  height: auto;
+  transition: transform 0.3s ease;
+}
+
+article img:hover {
+  transform: scale(1.1); /* Agrandir un peu l'image au survol */
+}
+
+
 article {
   background-color: #f9f9f9;
   padding: 15px;
   border-radius: 5px;
+  transition: box-shadow 0.3s ease; /* Ajout d'une transition  */
 }
 
-article img {
-  width: 100%;
-  height: auto;
+article:hover {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
-
-article h2 {
-  margin-top: 10px;
-  margin-bottom: 5px;
-}
-
-article p {
-  margin: 5px 0;
-}
-

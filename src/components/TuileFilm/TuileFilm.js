@@ -8,8 +8,8 @@ function TuileFilm(props) {
   const { data, id, filtreActif } = props;
   
   return (
-    <div>
-      <article data-testid={`tuile-film-${id}`}>
+    <div class="tuile-container">
+      <article data-testid={`tuile-film-${id}`}>      
         <img src={`/img/${data.titreVignette}`} alt={data.titre} />
         <h2>{data.titre}</h2>
         {filtreActif && filtreActif.includes('realisation') && <p>Réalisateur: {data.realisation}</p>}

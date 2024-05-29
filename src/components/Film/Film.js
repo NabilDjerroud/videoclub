@@ -79,7 +79,7 @@ function Film() {
   }
 
   let blockAjoutCommentaire = context.estLog && (
-    <form onSubmit={soumettreCommentaire}>
+    <form class="form-commentaire " onSubmit={soumettreCommentaire}>
       <textarea name='commentaire' placeholder="Ajoutez votre commentaire"></textarea>
       <button>Soumettre</button>
     </form>
@@ -102,11 +102,11 @@ function Film() {
           </div>
           <div className="film-info">
             <h2>{film.titre}</h2>
-            <p>Réalisation: {film.realisation}</p>
-            <p>Année: {film.annee}</p>
-            <p>Genres: {genresFilm}</p>
-            <p>Description: {film.description}</p>
-            <p>Notes: {film.notes}</p>
+            <p><strong>Réalisation:</strong> {film.realisation}</p>
+            <p><strong>Année:</strong> {film.annee}</p>
+            <p><strong>Genres:</strong> {genresFilm}</p>
+            <p><strong>Description:</strong> {film.description}</p>
+            {/* <p>Notes: {film.notes}</p> */}
             {/* Intégration du composant Vote */}
             <Vote />
             {blockAjoutCommentaire}
