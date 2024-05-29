@@ -1,77 +1,72 @@
-/* Style global */
-body {
-    margin: 0;
-    font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
-  }
-  
-  /* Style de l'en-tête */
-  header {
-    background-color: #333;
-    color: white;
-    padding: 20px 0;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  }
-  
-  .wrapper {
-    width: 90%;
-    margin: 0 auto;
-    max-width: 1200px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
-  
-  .entete {
-    display: flex;
-    align-items: center;
-  }
-  
-  .entete h1 {
-    margin: 0;
-    font-size: 24px;
-    color: #ff6347;
-  }
-  
-  .entete nav {
-    margin-left: 20px;
-  }
-  
-  .entete nav a {
-    color: white;
-    text-decoration: none;
-    margin-left: 15px;
-    font-size: 18px;
-  }
-  
-  .entete nav a:hover {
-    text-decoration: underline;
-  }
-  
-  /* Style du formulaire de connexion */
-  form {
-    display: flex;
-    align-items: center;
-  }
-  
-  form input[type="text"] {
-    padding: 10px;
-    border: none;
-    border-radius: 5px;
-    margin-right: 10px;
-  }
-  
-  form button {
-    padding: 10px 15px;
-    border: none;
-    border-radius: 5px;
-    background-color: #ff6347;
-    color: white;
-    cursor: pointer;
-    font-size: 16px;
-  }
-  
-  form button:hover {
-    background-color: #e55347;
-  }
-  
+header {
+  background-color: #1a1a1a;
+  color: #fff;
+  padding: 20px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.entete h1 {
+  margin: 0;
+  font-size: 2.5rem;
+  color: #fff;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-weight: 700;
+  transition: color 0.3s ease;
+}
+
+.entete h1:hover {
+  color: #007bff;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+}
+
+nav a {
+  margin-right: 20px;
+  text-decoration: none;
+  color: #fff;
+  font-size: 1.2rem;
+  transition: color 0.3s ease;
+}
+
+nav a:hover {
+  color: #007bff;
+}
+
+form {
+  display: flex;
+  align-items: center;
+}
+
+input[type="text"] {
+  padding: 10px;
+  margin-right: 10px;
+  border: none;
+  border-radius: 5px;
+  background-color: #fff;
+  color: #333;
+  font-size: 1rem;
+}
+
+button {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #0056b3;
+}

@@ -1,0 +1,21 @@
+.commentaires {
+    margin-top: 20px;
+  }
+  
+  .commentaire {
+    border-bottom: 1px solid #ccc;
+    padding: 10px;
+  }
+  
+  .commentaire p {
+    margin: 0;
+  }
+  
+  .commentaire p:first-child {
+    font-weight: bold;
+  }
+  
+  .commentaire p:last-child {
+    color: #888;
+  }
+  

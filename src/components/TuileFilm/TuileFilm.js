@@ -1,22 +1,20 @@
-import { Link } from 'react-router-dom';
 import './TuileFilm.css';
 
 function TuileFilm(props) {
   
   // console.log(props);
   // console.log(props.data);
+
+  const { data, id, filtreActif } = props;
   
   return (
     <div>
-       <Link to={`/film/${props.data.id}`}>
-        {/* Ajout des props data pour vérifier si un element existe via les tests */}
-        <article data-testid={`tuile-film-${props.id}`}>
-          <img src={`/img/${props.data.titreVignette}`} alt={props.data.titre} />
-          <h2>{props.data.titre}</h2>
-          <p>Réalisateur: {props.data.realisation}</p>
-          <p>Année: {props.data.annee}</p>
-        </article>
-      </Link>
+      <article data-testid={`tuile-film-${id}`}>
+        <img src={`/img/${data.titreVignette}`} alt={data.titre} />
+        <h2>{data.titre}</h2>
+        {filtreActif && filtreActif.includes('realisation') && <p>Réalisateur: {data.realisation}</p>}
+        {filtreActif && filtreActif.includes('annee') && <p>Année: {data.annee}</p>}
+      </article>
     </div>
   );
 }

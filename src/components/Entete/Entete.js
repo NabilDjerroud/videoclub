@@ -18,26 +18,28 @@ function Entete(props) {
   // }
 
   return (
-    
-      <header>
-        <div className="wrapper">
-          <div className="entete">
-            <NavLink to="/">
-              <h1>VideoClub</h1>
-            </NavLink>
-            <nav>
-              {context.estLog ? <NavLink to='/admin'>Admin</NavLink> : ''}
-              <NavLink to="liste-films">Liste des films</NavLink>
-            </nav>
-          </div>
-          <form onSubmit={props.handleLogin}>
-            {/* <input ref={elUsager} type="text" name="usager" placeholder="Usager"></input> */}
-            <input type="text" name="usager" placeholder="Usager"></input>
-            <button>Login</button>
-          </form>
+    <header>
+      <div className="wrapper">
+        <div class="navigation" className="entete">
+          <NavLink to="/">
+            <h1>VideoClub</h1>
+          </NavLink>
+          <nav>
+            {context.estLog ? (
+              <>
+                <NavLink to='/admin'>Admin</NavLink>
+                <button onClick={props.handleLogout}>Logout</button>
+              </>
+            ) : ''}
+            <NavLink to="liste-films">Liste des films</NavLink>
+          </nav>
         </div>
-      </header>
-
+        <form onSubmit={props.handleLogin}>
+          {context.estLog ? <p>Bonjour, {context.nom}</p> : <input type="text" name="usager" placeholder="Usager" />}
+          <button>{context.estLog ? 'Logout' : 'Login'}</button>
+        </form>
+      </div>
+    </header>
   );
 }
 

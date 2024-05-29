@@ -29,22 +29,22 @@ function App() {
     }
   }
 
+  function logout() {
+    setUsager({ estLog: false, nom: '' });
+  }
 
-  return (
-    <AppContext.Provider value ={usager}>
-      {/* <Router> */}
-        <Entete handleLogin={login}/>
 
-        <AnimatePresence mode='wait'>
-          <Routes location={location} key={location.key}>
-            <Route path='/' element={<Accueil />}/>
-            <Route path='/liste-Films' element={<ListeFilms />}/>
-            <Route path='/film/:id' element={<Film/>}/>
-            <Route path='/admin' element={usager.estLog ? <Admin/> : <Navigate to='/' />}/>
-          </Routes>
-        </AnimatePresence>
-      
-      {/* </Router> */}
+   return (
+    <AppContext.Provider value={usager}>
+      <Entete handleLogin={login} handleLogout={logout} />
+      <AnimatePresence mode='wait'>
+        <Routes location={location} key={location.key}>
+          <Route path='/' element={<Accueil />} />
+          <Route path='/liste-Films' element={<ListeFilms />} />
+          <Route path='/film/:id' element={<Film />} />
+          <Route path='/admin' element={usager.estLog ? <Admin /> : <Navigate to='/' />} />
+        </Routes>
+      </AnimatePresence>
     </AppContext.Provider>
   );
 }
